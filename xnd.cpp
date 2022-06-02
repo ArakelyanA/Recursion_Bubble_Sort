@@ -1,6 +1,6 @@
 #include <iostream>
-#include <iterator>
 #include <vector>
+#include <ctime>
 
 template <typename itertype>
 void bubble_sort(itertype begin, itertype end)
@@ -19,6 +19,7 @@ void bubble_sort(itertype begin, itertype end)
 }
 int main() 
 {
+  srand(time(0));
   std::vector<int> array;
   for(int i = 0; i < 10; i++)
   {
